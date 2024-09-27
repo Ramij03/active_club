@@ -36,3 +36,69 @@
     transform: rotate(360deg);
   }
 }
+
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+
+.card-header {
+  background-color: #f8f9fa;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+}
+
+.btn-light {
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-light:hover {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.text {
+  color: #000;
+}
+.category-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-circle.active {
+  background-color: #007bff; /* Primary color */
+}
+
+.category-circle:not(.active) {
+  background-color: #6c757d; /* Secondary color */
+}
+
+.category-circle i {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
